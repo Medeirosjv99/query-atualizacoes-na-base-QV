@@ -1,0 +1,11 @@
+## 🔗 Tarefa Monday
+```text
+https://vexur-company.monday.com/boards/18369698855/pulses/12764960634
+```
+
+## Query - correção de endereco
+
+```cypher
+LOAD CSV  with headers FROM 'https://s3.amazonaws.com/qv-docs-v2.vexur.com.br/5fc4fc8a-4fe9-434a-ad0d-e18ba0612640.csv' AS row FIELDTERMINATOR '|'
+return count(row), row
+```
